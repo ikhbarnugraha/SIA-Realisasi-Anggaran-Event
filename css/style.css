@@ -163,7 +163,7 @@ body {
     display: grid;
 
     grid-template-columns:
-        repeat(4, 1fr);
+        repeat(5, 1fr);
 
     gap: 20px;
 
@@ -803,4 +803,127 @@ tbody tr:hover {
         display: none;
     }
 
+}
+/* =========================================================
+   BUDGET INFO
+   ========================================================= */
+
+.budget-detail-info {
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    color: #6b7280;
+}
+/* =========================================================
+   GREEN COLOR OVERRIDE
+   Tambahkan di PALING BAWAH style.css
+   ========================================================= */
+
+/* Sidebar */
+.sidebar {
+    background-color: #1b5e20;
+}
+
+/* Menu aktif */
+.menu-item.active {
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+/* Hover menu */
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Judul topbar */
+.topbar h1 {
+    color: #1b5e20;
+}
+
+/* Icon statistik */
+.stat-icon {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+/* Angka statistik */
+.stat-info h2 {
+    color: #1b5e20;
+}
+
+/* Judul card */
+.card-header h2 {
+    color: #1b5e20;
+}
+
+/* Tombol utama */
+.btn-primary {
+    background-color: #2e7d32;
+}
+
+.btn-primary:hover {
+    background-color: #1b5e20;
+}
+
+/* Tombol sekunder */
+.btn-secondary {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.btn-secondary:hover {
+    background-color: #c8e6c9;
+}
+
+/* Header tabel */
+thead {
+    background-color: #f1f8f2;
+}
+
+th {
+    color: #2e5f34;
+}
+
+/* Hover tabel */
+tbody tr:hover {
+    background-color: #f7fbf7;
+}
+
+/* Tombol edit */
+.btn-edit {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.btn-edit:hover {
+    background-color: #c8e6c9;
+}
+
+/* Tombol/link bukti */
+.btn-link {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.btn-link:hover {
+    background-color: #c8e6c9;
+}
+
+/* Tombol approve */
+.btn-approve {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.btn-approve:hover {
+    background-color: #c8e6c9;
+}
+
+/* Total anggaran */
+.budget-total {
+    background-color: #f1f8f2;
+}
+
+.budget-total strong {
+    color: #2e7d32;
 }
