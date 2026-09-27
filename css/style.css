@@ -1098,3 +1098,248 @@ tbody tr:hover {
     background-color: #F4E6EB;
     color: #6D1F3A;
 }
+/* =========================================================
+   SAGE GREEN + SOFT PINK THEME
+   Tambahkan PALING BAWAH style.css
+   ========================================================= */
+
+/* Background utama */
+body {
+    background-color: #F7F5F2 !important;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.sidebar {
+    background-color: #7F9278 !important;
+}
+
+
+/* Menu */
+.menu-item {
+    color: #FFFFFF !important;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.menu-item.active {
+    background-color: #A8B5A2 !important;
+}
+
+
+/* =========================================================
+   TOPBAR
+   ========================================================= */
+
+.topbar {
+    background-color: #FFFFFF !important;
+}
+
+.topbar h1 {
+    color: #7F9278 !important;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.dashboard-card {
+    background-color: #FFFFFF !important;
+}
+
+.card-header h2 {
+    color: #7F9278 !important;
+}
+
+
+/* =========================================================
+   STATISTICS
+   ========================================================= */
+
+.stat-card {
+    background-color: #FFFFFF !important;
+}
+
+.stat-info h2 {
+    color: #7F9278 !important;
+}
+
+.stat-icon {
+    background-color: #F4DDE3 !important;
+    color: #7F9278 !important;
+}
+
+
+/* =========================================================
+   CONNECTION STATUS
+   ========================================================= */
+
+.connection-status {
+    background-color: #F4DDE3 !important;
+    color: #7F9278 !important;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.btn-primary {
+    background-color: #7F9278 !important;
+    color: #FFFFFF !important;
+}
+
+.btn-primary:hover {
+    background-color: #6D8066 !important;
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+   ========================================================= */
+
+.btn-secondary {
+    background-color: #F4DDE3 !important;
+    color: #7F9278 !important;
+}
+
+.btn-secondary:hover {
+    background-color: #EBC8D2 !important;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+thead {
+    background-color: #FAF0F3 !important;
+}
+
+th {
+    color: #7F9278 !important;
+}
+
+tbody tr:hover {
+    background-color: #FCF7F8 !important;
+}
+
+
+/* =========================================================
+   EDIT BUTTON
+   ========================================================= */
+
+.btn-edit {
+    background-color: #F4DDE3 !important;
+    color: #7F9278 !important;
+}
+
+.btn-edit:hover {
+    background-color: #EBC8D2 !important;
+}
+
+
+/* =========================================================
+   LINK / BUKTI
+   ========================================================= */
+
+.btn-link {
+    background-color: #F4DDE3 !important;
+    color: #7F9278 !important;
+}
+
+.btn-link:hover {
+    background-color: #EBC8D2 !important;
+}
+
+
+/* =========================================================
+   APPROVE
+   ========================================================= */
+
+.btn-approve {
+    background-color: #F4DDE3 !important;
+    color: #7F9278 !important;
+}
+
+.btn-approve:hover {
+    background-color: #EBC8D2 !important;
+}
+
+
+/* =========================================================
+   DELETE
+   Tetap pink lembut agar konsisten
+   ========================================================= */
+
+.btn-delete {
+    background-color: #F8E5EA !important;
+    color: #B05C73 !important;
+}
+
+.btn-delete:hover {
+    background-color: #F0CCD5 !important;
+}
+
+
+/* =========================================================
+   TOTAL ANGGARAN
+   ========================================================= */
+
+.budget-total {
+    background-color: #FAF0F3 !important;
+}
+
+.budget-total strong {
+    color: #7F9278 !important;
+}
+
+
+/* =========================================================
+   INPUT FOCUS
+   ========================================================= */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #A8B5A2 !important;
+
+    box-shadow:
+        0 0 0 3px rgba(168, 181, 162, 0.18) !important;
+}
+
+
+/* =========================================================
+   STATUS AMAN
+   ========================================================= */
+
+.status-aman {
+    background-color: #E8EFE5 !important;
+    color: #6F8069 !important;
+}
+
+
+/* =========================================================
+   STATUS WARNING
+   ========================================================= */
+
+.status-warning {
+    background-color: #F9E9D7 !important;
+    color: #B47742 !important;
+}
+
+
+/* =========================================================
+   STATUS OVER
+   ========================================================= */
+
+.status-over {
+    background-color: #F8E1E6 !important;
+    color: #B05C73 !important;
+}
