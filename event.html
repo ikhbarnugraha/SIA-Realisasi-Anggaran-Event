@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Event - SIA Realisasi Anggaran</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+
+            <h2>SIA Event</h2>
+
+            <p>Realisasi Anggaran</p>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+            <a
+                href="index.html"
+                class="menu-item"
+            >
+                Dashboard
+            </a>
+
+            <a
+                href="event.html"
+                class="menu-item active"
+            >
+                Event
+            </a>
+
+            <a
+                href="anggaran.html"
+                class="menu-item"
+            >
+                Anggaran
+            </a>
+
+            <a
+                href="realisasi.html"
+                class="menu-item"
+            >
+                Realisasi
+            </a>
+
+            <a
+                href="approval.html"
+                class="menu-item"
+            >
+                Approval
+            </a>
+
+            <a
+                href="laporan.html"
+                class="menu-item"
+            >
+                Laporan
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div>
+
+                <h1>Event</h1>
+
+                <p>
+                    Pengelolaan event kepanitiaan
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="dashboard-content">
+
+
+            <!-- FORM EVENT -->
+            <section class="dashboard-card form-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h2 id="form-title">
+                            Tambah Event
+                        </h2>
+
+                        <p>
+                            Masukkan informasi event
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-content">
+
+                    <form id="event-form">
+
+
+                        <!-- NAMA EVENT -->
+                        <div class="form-group">
+
+                            <label for="nama-event">
+                                Nama Event
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nama-event"
+                                placeholder="Contoh: Seminar Akuntansi 2026"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- TANGGAL -->
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label for="tanggal-mulai">
+                                    Tanggal Mulai
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="tanggal-mulai"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="tanggal-selesai">
+                                    Tanggal Selesai
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="tanggal-selesai"
+                                    required
+                                >
+
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- LOKASI -->
+                        <div class="form-group">
+
+                            <label for="lokasi">
+                                Lokasi
+                            </label>
+
+                            <input
+                                type="text"
+                                id="lokasi"
+                                placeholder="Contoh: Gedung Prof. Soedarto"
+                            >
+
+                        </div>
+
+
+                        <!-- DESKRIPSI -->
+                        <div class="form-group">
+
+                            <label for="deskripsi">
+                                Deskripsi
+                            </label>
+
+                            <textarea
+                                id="deskripsi"
+                                rows="4"
+                                placeholder="Deskripsi singkat event"
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- STATUS -->
+                        <div class="form-group">
+
+                            <label for="status">
+                                Status Event
+                            </label>
+
+                            <select id="status">
+
+                                <option value="perencanaan">
+                                    Perencanaan
+                                </option>
+
+                                <option value="berjalan">
+                                    Berjalan
+                                </option>
+
+                                <option value="selesai">
+                                    Selesai
+                                </option>
+
+                                <option value="dibatalkan">
+                                    Dibatalkan
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- BUTTON -->
+                        <div class="form-actions">
+
+                            <button
+                                type="submit"
+                                class="btn-primary"
+                            >
+                                Simpan Event
+                            </button>
+
+
+                            <button
+                                type="button"
+                                id="cancel-edit"
+                                class="btn-secondary"
+                                style="display: none;"
+                            >
+                                Batal Edit
+                            </button>
+
+                        </div>
+
+
+                        <p
+                            id="event-message"
+                            class="form-message"
+                        ></p>
+
+
+                    </form>
+
+                </div>
+
+            </section>
+
+
+            <!-- DAFTAR EVENT -->
+            <section class="dashboard-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h2>
+                            Daftar Event
+                        </h2>
+
+                        <p>
+                            Data event yang tersimpan
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>No</th>
+
+                                <th>
+                                    Nama Event
+                                </th>
+
+                                <th>
+                                    Tanggal
+                                </th>
+
+                                <th>
+                                    Lokasi
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Aksi
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="event-table">
+
+                            <tr>
+
+                                <td
+                                    colspan="6"
+                                    class="empty-state"
+                                >
+                                    Memuat data...
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- SUPABASE -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+    ></script>
+
+    <script
+        src="js/supabase.js"
+    ></script>
+
+    <script
+        src="js/event.js"
+    ></script>
+
+</body>
+
+</html>

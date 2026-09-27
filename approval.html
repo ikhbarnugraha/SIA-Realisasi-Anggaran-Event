@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Approval - SIA Realisasi Anggaran
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SIDEBAR
+         ===================================================== -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+
+            <h2>SIA Event</h2>
+
+            <p>
+                Realisasi Anggaran
+            </p>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+            <a
+                href="index.html"
+                class="menu-item"
+            >
+                Dashboard
+            </a>
+
+
+            <a
+                href="event.html"
+                class="menu-item"
+            >
+                Event
+            </a>
+
+
+            <a
+                href="anggaran.html"
+                class="menu-item"
+            >
+                Anggaran
+            </a>
+
+
+            <a
+                href="realisasi.html"
+                class="menu-item"
+            >
+                Realisasi
+            </a>
+
+
+            <a
+                href="approval.html"
+                class="menu-item active"
+            >
+                Approval
+            </a>
+
+
+            <a
+                href="laporan.html"
+                class="menu-item"
+            >
+                Laporan
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    Approval
+                </h1>
+
+                <p>
+                    Persetujuan transaksi realisasi anggaran
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <section class="dashboard-content">
+
+
+            <!-- =================================================
+                 SUMMARY
+                 ================================================= -->
+
+            <div class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-info">
+
+                        <p>
+                            Pending
+                        </p>
+
+                        <h2 id="total-pending">
+                            0
+                        </h2>
+
+                    </div>
+
+                    <div class="stat-icon">
+                        P
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-info">
+
+                        <p>
+                            Approved
+                        </p>
+
+                        <h2 id="total-approved">
+                            0
+                        </h2>
+
+                    </div>
+
+                    <div class="stat-icon">
+                        A
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-info">
+
+                        <p>
+                            Rejected
+                        </p>
+
+                        <h2 id="total-rejected">
+                            0
+                        </h2>
+
+                    </div>
+
+                    <div class="stat-icon">
+                        R
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 MESSAGE
+                 ================================================= -->
+
+            <div
+                id="approval-message"
+                class="connection-status"
+            >
+                Memuat transaksi...
+            </div>
+
+
+            <!-- =================================================
+                 APPROVAL TABLE
+                 ================================================= -->
+
+            <section class="dashboard-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h2>
+                            Daftar Transaksi
+                        </h2>
+
+                        <p>
+                            Periksa dan proses transaksi realisasi
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    No
+                                </th>
+
+                                <th>
+                                    Event
+                                </th>
+
+                                <th>
+                                    Item Anggaran
+                                </th>
+
+                                <th>
+                                    Tanggal
+                                </th>
+
+                                <th>
+                                    Nomor Bukti
+                                </th>
+
+                                <th>
+                                    Keterangan
+                                </th>
+
+                                <th>
+                                    Jumlah
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Aksi
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="approval-table">
+
+                            <tr>
+
+                                <td
+                                    colspan="9"
+                                    class="empty-state"
+                                >
+                                    Memuat data...
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- SUPABASE -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+    ></script>
+
+
+    <script
+        src="js/supabase.js"
+    ></script>
+
+
+    <script
+        src="js/approval.js"
+    ></script>
+
+</body>
+
+</html>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Anggaran - SIA Realisasi Anggaran
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SIDEBAR
+         ===================================================== -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+
+            <h2>SIA Event</h2>
+
+            <p>
+                Realisasi Anggaran
+            </p>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+            <a
+                href="index.html"
+                class="menu-item"
+            >
+                Dashboard
+            </a>
+
+
+            <a
+                href="event.html"
+                class="menu-item"
+            >
+                Event
+            </a>
+
+
+            <a
+                href="anggaran.html"
+                class="menu-item active"
+            >
+                Anggaran
+            </a>
+
+
+            <a
+                href="realisasi.html"
+                class="menu-item"
+            >
+                Realisasi
+            </a>
+
+
+            <a
+                href="approval.html"
+                class="menu-item"
+            >
+                Approval
+            </a>
+
+
+            <a
+                href="laporan.html"
+                class="menu-item"
+            >
+                Laporan
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    Anggaran
+                </h1>
+
+                <p>
+                    Perencanaan anggaran event kepanitiaan
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="dashboard-content">
+
+
+            <!-- =================================================
+                 FORM ANGGARAN
+                 ================================================= -->
+
+            <section class="dashboard-card form-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h2>
+                            Tambah Anggaran
+                        </h2>
+
+                        <p>
+                            Buat anggaran untuk suatu event
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-content">
+
+                    <form id="budget-form">
+
+
+                        <!-- EVENT -->
+                        <div class="form-group">
+
+                            <label for="budget-event">
+
+                                Pilih Event
+
+                            </label>
+
+
+                            <select
+                                id="budget-event"
+                                required
+                            >
+
+                                <option value="">
+                                    Memuat event...
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- NAMA ANGGARAN -->
+                        <div class="form-group">
+
+                            <label for="nama-anggaran">
+
+                                Nama Anggaran
+
+                            </label>
+
+
+                            <input
+                                type="text"
+                                id="nama-anggaran"
+                                placeholder="Contoh: Anggaran Seminar Akuntansi"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- BUTTON -->
+                        <div class="form-actions">
+
+                            <button
+                                type="submit"
+                                class="btn-primary"
+                            >
+                                Simpan Anggaran
+                            </button>
+
+                        </div>
+
+
+                        <p
+                            id="budget-message"
+                            class="form-message"
+                        ></p>
+
+
+                    </form>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 DAFTAR ANGGARAN
+                 ================================================= -->
+
+            <section class="dashboard-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h2>
+                            Daftar Anggaran
+                        </h2>
+
+                        <p>
+                            Pilih anggaran untuk mengelola detail
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    No
+                                </th>
+
+                                <th>
+                                    Event
+                                </th>
+
+                                <th>
+                                    Nama Anggaran
+                                </th>
+
+                                <th>
+                                    Aksi
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="budget-table">
+
+                            <tr>
+
+                                <td
+                                    colspan="4"
+                                    class="empty-state"
+                                >
+                                    Memuat data...
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 DETAIL ANGGARAN
+                 ================================================= -->
+
+            <section
+                id="detail-section"
+                class="dashboard-card detail-section-hidden"
+            >
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h2 id="selected-budget-title">
+
+                            Detail Anggaran
+
+                        </h2>
+
+
+                        <p id="selected-budget-event">
+
+                            -
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-content">
+
+                    <form id="detail-form">
+
+
+                        <!-- KATEGORI -->
+                        <div class="form-group">
+
+                            <label for="detail-category">
+
+                                Kategori
+
+                            </label>
+
+
+                            <select
+                                id="detail-category"
+                                required
+                            >
+
+                                <option value="">
+                                    Pilih kategori
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- NAMA ITEM -->
+                        <div class="form-group">
+
+                            <label for="detail-item">
+
+                                Nama Item
+
+                            </label>
+
+
+                            <input
+                                type="text"
+                                id="detail-item"
+                                placeholder="Contoh: Snack peserta"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- DESKRIPSI -->
+                        <div class="form-group">
+
+                            <label for="detail-description">
+
+                                Deskripsi
+
+                            </label>
+
+
+                            <textarea
+                                id="detail-description"
+                                rows="3"
+                                placeholder="Keterangan item"
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- JUMLAH & SATUAN -->
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label for="detail-quantity">
+
+                                    Jumlah
+
+                                </label>
+
+
+                                <input
+                                    type="number"
+                                    id="detail-quantity"
+                                    min="0.01"
+                                    step="0.01"
+                                    value="1"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="detail-unit">
+
+                                    Satuan
+
+                                </label>
+
+
+                                <input
+                                    type="text"
+                                    id="detail-unit"
+                                    value="unit"
+                                    required
+                                >
+
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- HARGA -->
+                        <div class="form-group">
+
+                            <label for="detail-price">
+
+                                Harga Satuan
+
+                            </label>
+
+
+                            <input
+                                type="number"
+                                id="detail-price"
+                                min="0"
+                                step="1000"
+                                placeholder="0"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- BUTTON -->
+                        <div class="form-actions">
+
+                            <button
+                                type="submit"
+                                class="btn-primary"
+                            >
+                                Tambah Detail
+                            </button>
+
+                        </div>
+
+
+                        <p
+                            id="detail-message"
+                            class="form-message"
+                        ></p>
+
+
+                    </form>
+
+                </div>
+
+
+                <!-- DETAIL TABLE -->
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    No
+                                </th>
+
+                                <th>
+                                    Kategori
+                                </th>
+
+                                <th>
+                                    Item
+                                </th>
+
+                                <th>
+                                    Jumlah
+                                </th>
+
+                                <th>
+                                    Satuan
+                                </th>
+
+                                <th>
+                                    Harga Satuan
+                                </th>
+
+                                <th>
+                                    Total
+                                </th>
+
+                                <th>
+                                    Aksi
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="detail-table">
+
+                            <tr>
+
+                                <td
+                                    colspan="8"
+                                    class="empty-state"
+                                >
+                                    Belum ada detail anggaran.
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- TOTAL -->
+                <div class="budget-total">
+
+                    <div>
+
+                        <span>
+                            Total Anggaran
+                        </span>
+
+                        <strong id="detail-total">
+                            Rp0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         SUPABASE
+         ===================================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+    ></script>
+
+
+    <script
+        src="js/supabase.js"
+    ></script>
+
+
+    <script
+        src="js/anggaran.js"
+    ></script>
+
+</body>
+
+</html>

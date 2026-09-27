@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        SIA Realisasi Anggaran Event
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+
+            <h2>
+                SIA Event
+            </h2>
+
+            <p>
+                Realisasi Anggaran
+            </p>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+            <a
+                href="index.html"
+                class="menu-item active"
+            >
+                Dashboard
+            </a>
+
+            <a
+                href="event.html"
+                class="menu-item"
+            >
+                Event
+            </a>
+
+            <a
+                href="anggaran.html"
+                class="menu-item"
+            >
+                Anggaran
+            </a>
+
+            <a
+                href="realisasi.html"
+                class="menu-item"
+            >
+                Realisasi
+            </a>
+
+            <a
+                href="approval.html"
+                class="menu-item"
+            >
+                Approval
+            </a>
+
+            <a
+                href="laporan.html"
+                class="menu-item"
+            >
+                Laporan
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+                <p>
+                    Sistem Informasi Akuntansi
+                    Realisasi Anggaran Event Kepanitiaan
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="dashboard-content">
+
+
+            <!-- STATUS -->
+            <div
+                id="status-koneksi"
+                class="connection-status"
+            >
+                Menghubungkan ke database...
+            </div>
+
+
+            <!-- STATISTICS -->
+            <div class="stats-grid">
+
+
+                <!-- TOTAL EVENT -->
+                <div class="stat-card">
+
+                    <div class="stat-info">
+
+                        <p>
+                            Total Event
+                        </p>
+
+                        <h2 id="total-event">
+                            0
+                        </h2>
+
+                    </div>
+
+                    <div class="stat-icon">
+                        E
+                    </div>
+
+                </div>
+
+
+                <!-- TOTAL ANGGARAN -->
+                <div class="stat-card">
+
+                    <div class="stat-info">
+
+                        <p>
+                            Total Anggaran
+                        </p>
+
+                        <h2 id="total-anggaran">
+                            Rp0
+                        </h2>
+
+                    </div>
+
+                    <div class="stat-icon">
+                        A
+                    </div>
+
+                </div>
+
+
+                <!-- TOTAL REALISASI -->
+                <div class="stat-card">
+
+                    <div class="stat-info">
+
+                        <p>
+                            Total Realisasi
+                        </p>
+
+                        <h2 id="total-realisasi">
+                            Rp0
+                        </h2>
+
+                    </div>
+
+                    <div class="stat-icon">
+                        R
+                    </div>
+
+                </div>
+
+
+                <!-- SISA ANGGARAN -->
+                <div class="stat-card">
+
+                    <div class="stat-info">
+
+                        <p>
+                            Sisa Anggaran
+                        </p>
+
+                        <h2 id="sisa-anggaran">
+                            Rp0
+                        </h2>
+
+                    </div>
+
+                    <div class="stat-icon">
+                        S
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- REALISASI -->
+            <section class="dashboard-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h2>
+                            Ringkasan Realisasi Anggaran
+                        </h2>
+
+                        <p>
+                            Perbandingan anggaran dan realisasi
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Event
+                                </th>
+
+                                <th>
+                                    Kategori
+                                </th>
+
+                                <th>
+                                    Item
+                                </th>
+
+                                <th>
+                                    Anggaran
+                                </th>
+
+                                <th>
+                                    Realisasi
+                                </th>
+
+                                <th>
+                                    Sisa
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="realisasi-table">
+
+                            <tr>
+
+                                <td
+                                    colspan="7"
+                                    class="empty-state"
+                                >
+                                    Memuat data...
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- SUPABASE -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+    ></script>
+
+
+    <!-- CONFIGURATION -->
+    <script
+        src="js/supabase.js"
+    ></script>
+
+
+    <!-- APPLICATION -->
+    <script
+        src="js/app.js"
+    ></script>
+
+</body>
+
+</html>
