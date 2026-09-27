@@ -927,3 +927,174 @@ tbody tr:hover {
 .budget-total strong {
     color: #2e7d32;
 }
+/* =========================================================
+   BURGUNDY COLOR OVERRIDE
+   Tambahkan di PALING BAWAH style.css
+   ========================================================= */
+
+/* Sidebar */
+.sidebar {
+    background-color: #6D1F3A;
+}
+
+/* Menu aktif */
+.menu-item.active {
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+/* Hover menu */
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+
+/* =========================================================
+   TOPBAR
+   ========================================================= */
+
+.topbar h1 {
+    color: #6D1F3A;
+}
+
+
+/* =========================================================
+   STATISTICS
+   ========================================================= */
+
+.stat-info h2 {
+    color: #6D1F3A;
+}
+
+.stat-icon {
+    background-color: #F4E6EB;
+    color: #6D1F3A;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.card-header h2 {
+    color: #6D1F3A;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.btn-primary {
+    background-color: #7A2945;
+}
+
+.btn-primary:hover {
+    background-color: #5A1730;
+}
+
+
+/* Secondary button */
+.btn-secondary {
+    background-color: #F4E6EB;
+    color: #6D1F3A;
+}
+
+.btn-secondary:hover {
+    background-color: #E8CCD6;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+thead {
+    background-color: #F8EFF2;
+}
+
+th {
+    color: #6D1F3A;
+}
+
+tbody tr:hover {
+    background-color: #FCF6F8;
+}
+
+
+/* =========================================================
+   EDIT BUTTON
+   ========================================================= */
+
+.btn-edit {
+    background-color: #F4E6EB;
+    color: #6D1F3A;
+}
+
+.btn-edit:hover {
+    background-color: #E8CCD6;
+}
+
+
+/* =========================================================
+   LINK / BUKTI
+   ========================================================= */
+
+.btn-link {
+    background-color: #F4E6EB;
+    color: #6D1F3A;
+}
+
+.btn-link:hover {
+    background-color: #E8CCD6;
+}
+
+
+/* =========================================================
+   APPROVE
+   ========================================================= */
+
+.btn-approve {
+    background-color: #F4E6EB;
+    color: #6D1F3A;
+}
+
+.btn-approve:hover {
+    background-color: #E8CCD6;
+}
+
+
+/* =========================================================
+   TOTAL ANGGARAN
+   ========================================================= */
+
+.budget-total {
+    background-color: #F8EFF2;
+}
+
+.budget-total strong {
+    color: #6D1F3A;
+}
+
+
+/* =========================================================
+   INPUT FOCUS
+   ========================================================= */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #7A2945;
+
+    box-shadow:
+        0 0 0 3px rgba(122, 41, 69, 0.10);
+}
+
+
+/* =========================================================
+   CONNECTION STATUS
+   ========================================================= */
+
+.connection-status {
+    background-color: #F4E6EB;
+    color: #6D1F3A;
+}
