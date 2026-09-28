@@ -1985,3 +1985,419 @@ body::before {
 body::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Cpolygon points='8,78 92,18 108,54 212,8 154,70 210,116 112,76 72,128 82,70' fill='%23C6A352'/%3E%3Cpolygon points='92,18 108,54 154,70 112,76' fill='%230F5C4D'/%3E%3Cpolygon points='108,54 212,8 154,70' fill='%238F762F'/%3E%3C/svg%3E") !important;
 }
+/* =========================================================
+   FINAL BIRD SYSTEM
+   12 ORIGAMI BIRDS
+   6 PAIRS
+   BLACK → BIRDS → UI
+   BIRDS DO NOT AFFECT PAGE LAYOUT
+   ========================================================= */
+
+
+/* =========================================================
+   RESET BURUNG LAMA
+   ========================================================= */
+
+body::before,
+body::after {
+    content: none !important;
+    display: none !important;
+}
+
+
+/* =========================================================
+   BASIC VIEWPORT
+   ========================================================= */
+
+html {
+    width: 100%;
+    min-height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden !important;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #0B0B0B !important;
+
+    overflow-x: hidden !important;
+}
+
+
+/* =========================================================
+   12 BURUNG SEBAGAI BACKGROUND
+   TIDAK MEMAKAI ELEMENT HTML
+   TIDAK MENAMBAH TINGGI HALAMAN
+   ========================================================= */
+
+body {
+
+    background-image:
+
+        /* =================================================
+           1 - EMERALD
+           ================================================= */
+
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Cpolygon points='8,78 92,18 108,54 212,8 154,70 210,116 112,76 72,128 82,70' fill='%230F5C4D'/%3E%3Cpolygon points='92,18 108,54 154,70 112,76' fill='%23C6A352'/%3E%3Cpolygon points='108,54 212,8 154,70' fill='%231A7562'/%3E%3C/svg%3E"),
+
+        /* 2 - GOLD */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Cpolygon points='8,78 92,18 108,54 212,8 154,70 210,116 112,76 72,128 82,70' fill='%23C6A352'/%3E%3Cpolygon points='92,18 108,54 154,70 112,76' fill='%230F5C4D'/%3E%3Cpolygon points='108,54 212,8 154,70' fill='%238F762F'/%3E%3C/svg%3E"),
+
+        /* 3 - EMERALD */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Cpolygon points='8,78 92,18 108,54 212,8 154,70 210,116 112,76 72,128 82,70' fill='%230F5C4D'/%3E%3Cpolygon points='92,18 108,54 154,70 112,76' fill='%23C6A352'/%3E%3Cpolygon points='108,54 212,8 154,70' fill='%231A7562'/%3E%3C/svg%3E"),
+
+        /* 4 - GOLD */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Cpolygon points='8,78 92,18 108,54 212,8 154,70 210,116 112,76 72,128 82,70' fill='%23C6A352'/%3E%3Cpolygon points='92,18 108,54 154,70 112,76' fill='%230F5C4D'/%3E%3Cpolygon points='108,54 212,8 154,70' fill='%238F762F'/%3E%3C/svg%3E"),
+
+        /* 5 - EMERALD */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Cpolygon points='8,78 92,18 108,54 212,8 154,70 210,116 112,76 72,128 82,70' fill='%230F5C4D'/%3E%3Cpolygon points='92,18 108,54 154,70 112,76' fill='%23C6A352'/%3E%3Cpolygon points='108,54 212,8 154,70' fill='%231A7562'/%3E%3C/svg%3E"),
+
+        /* 6 - GOLD */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Cpolygon points='8,78 92,18 108,54 212,8 154,70 210,116 112,76 72,128 82,70' fill='%23C6A352'/%3E%3Cpolygon points='92,18 108,54 154,70 112,76' fill='%230F5C4D'/%3E%3Cpolygon points='108,54 212,8 154,70' fill='%238F762F'/%3E%3C/svg%3E"),
+
+        /* 7 - EMERALD */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Cpolygon points='8,78 92,18 108,54 212,8 154,70 210,116 112,76 72,128 82,70' fill='%230F5C4D'/%3E%3Cpolygon points='92,18 108,54 154,70 112,76' fill='%23C6A352'/%3E%3Cpolygon points='108,54 212,8 154,70' fill='%231A7562'/%3E%3C/svg%3E"),
+
+        /* 8 - GOLD */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Cpolygon points='8,78 92,18 108,54 212,8 154,70 210,116 112,76 72,128 82,70' fill='%23C6A352'/%3E%3Cpolygon points='92,18 108,54 154,70 112,76' fill='%230F5C4D'/%3E%3Cpolygon points='108,54 212,8 154,70' fill='%238F762F'/%3E%3C/svg%3E"),
+
+        /* 9 - EMERALD */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Cpolygon points='8,78 92,18 108,54 212,8 154,70 210,116 112,76 72,128 82,70' fill='%230F5C4D'/%3E%3Cpolygon points='92,18 108,54 154,70 112,76' fill='%23C6A352'/%3E%3Cpolygon points='108,54 212,8 154,70' fill='%231A7562'/%3E%3C/svg%3E"),
+
+        /* 10 - GOLD */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Cpolygon points='8,78 92,18 108,54 212,8 154,70 210,116 112,76 72,128 82,70' fill='%23C6A352'/%3E%3Cpolygon points='92,18 108,54 154,70 112,76' fill='%230F5C4D'/%3E%3Cpolygon points='108,54 212,8 154,70' fill='%238F762F'/%3E%3C/svg%3E"),
+
+        /* 11 - EMERALD */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Cpolygon points='8,78 92,18 108,54 212,8 154,70 210,116 112,76 72,128 82,70' fill='%230F5C4D'/%3E%3Cpolygon points='92,18 108,54 154,70 112,76' fill='%23C6A352'/%3E%3Cpolygon points='108,54 212,8 154,70' fill='%231A7562'/%3E%3C/svg%3E"),
+
+        /* 12 - GOLD */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Cpolygon points='8,78 92,18 108,54 212,8 154,70 210,116 112,76 72,128 82,70' fill='%23C6A352'/%3E%3Cpolygon points='92,18 108,54 154,70 112,76' fill='%230F5C4D'/%3E%3Cpolygon points='108,54 212,8 154,70' fill='%238F762F'/%3E%3C/svg%3E");
+
+
+    /* =====================================================
+       UKURAN
+       ===================================================== */
+
+    background-size:
+
+        85px 55px,
+        65px 42px,
+        72px 46px,
+        55px 36px,
+        95px 60px,
+        70px 45px,
+        60px 39px,
+        82px 53px,
+        75px 48px,
+        58px 38px,
+        68px 44px,
+        88px 57px;
+
+
+    /* =====================================================
+       POSISI AWAL
+       ===================================================== */
+
+    background-position:
+
+        -120px 14vh,
+        -30px 18vh,
+
+        -250px 28vh,
+        -80px 32vh,
+
+        -180px 42vh,
+        -20px 38vh,
+
+        -300px 52vh,
+        -100px 48vh,
+
+        -220px 64vh,
+        -40px 69vh,
+
+        -330px 78vh,
+        -130px 73vh;
+
+
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+
+
+    background-attachment:
+        fixed;
+
+
+    /* =====================================================
+       ANIMATION
+       ===================================================== */
+
+    animation:
+        origamiFlock
+        24s
+        linear
+        infinite;
+
+}
+
+
+/* =========================================================
+   FLOCK ANIMATION
+   SEMUA BURUNG BERGERAK KIRI → KANAN
+   DENGAN JALUR SEDIKIT BERBEDA
+   ========================================================= */
+
+@keyframes origamiFlock {
+
+    0% {
+
+        background-position:
+
+            -120px 14vh,
+            -30px 18vh,
+
+            -250px 28vh,
+            -80px 32vh,
+
+            -180px 42vh,
+            -20px 38vh,
+
+            -300px 52vh,
+            -100px 48vh,
+
+            -220px 64vh,
+            -40px 69vh,
+
+            -330px 78vh,
+            -130px 73vh;
+
+    }
+
+
+    20% {
+
+        background-position:
+
+            15vw 12vh,
+            20vw 17vh,
+
+            8vw 30vh,
+            25vw 27vh,
+
+            22vw 40vh,
+            35vw 36vh,
+
+            5vw 55vh,
+            18vw 49vh,
+
+            25vw 66vh,
+            42vw 71vh,
+
+            8vw 76vh,
+            22vw 70vh;
+
+    }
+
+
+    40% {
+
+        background-position:
+
+            38vw 16vh,
+            45vw 20vh,
+
+            32vw 26vh,
+            50vw 31vh,
+
+            45vw 44vh,
+            57vw 37vh,
+
+            30vw 50vh,
+            45vw 54vh,
+
+            48vw 62vh,
+            60vw 68vh,
+
+            34vw 80vh,
+            48vw 74vh;
+
+    }
+
+
+    60% {
+
+        background-position:
+
+            61vw 12vh,
+            68vw 18vh,
+
+            55vw 30vh,
+            72vw 26vh,
+
+            67vw 41vh,
+            80vw 38vh,
+
+            58vw 54vh,
+            74vw 49vh,
+
+            72vw 65vh,
+            86vw 70vh,
+
+            60vw 76vh,
+            75vw 72vh;
+
+    }
+
+
+    80% {
+
+        background-position:
+
+            83vw 17vh,
+            89vw 13vh,
+
+            78vw 27vh,
+            94vw 31vh,
+
+            85vw 39vh,
+            97vw 44vh,
+
+            80vw 51vh,
+            95vw 55vh,
+
+            88vw 63vh,
+            99vw 68vh,
+
+            82vw 77vh,
+            96vw 73vh;
+
+    }
+
+
+    100% {
+
+        background-position:
+
+            calc(100vw + 120px) 14vh,
+            calc(100vw + 150px) 18vh,
+
+            calc(100vw + 250px) 28vh,
+            calc(100vw + 180px) 32vh,
+
+            calc(100vw + 180px) 42vh,
+            calc(100vw + 140px) 38vh,
+
+            calc(100vw + 300px) 52vh,
+            calc(100vw + 200px) 48vh,
+
+            calc(100vw + 220px) 64vh,
+            calc(100vw + 160px) 69vh,
+
+            calc(100vw + 330px) 78vh,
+            calc(100vw + 230px) 73vh;
+
+    }
+
+}
+
+
+/* =========================================================
+   UI
+   TETAP DI DEPAN BACKGROUND BURUNG
+   ========================================================= */
+
+.sidebar {
+    position: fixed !important;
+
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 240px !important;
+    height: 100vh !important;
+
+    z-index: 20 !important;
+
+    background-color: #0F5C4D !important;
+}
+
+
+.main-content {
+    position: relative !important;
+
+    z-index: 20 !important;
+
+    margin-left: 240px !important;
+    margin-top: 0 !important;
+
+    min-height: 100vh !important;
+
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   UI OPAQUE
+   BURUNG AKAN TERTUTUP SAAT BERADA DI BELAKANG UI
+   ========================================================= */
+
+.topbar,
+.dashboard-card,
+.stat-card {
+    position: relative !important;
+
+    z-index: 30 !important;
+
+    background-color: #181818 !important;
+}
+
+
+.dashboard-content {
+    position: relative !important;
+
+    z-index: 20 !important;
+
+    background-color: transparent !important;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.table-container {
+    position: relative !important;
+
+    z-index: 30 !important;
+
+    background-color: #181818 !important;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.form-content {
+    position: relative !important;
+
+    z-index: 30 !important;
+}
